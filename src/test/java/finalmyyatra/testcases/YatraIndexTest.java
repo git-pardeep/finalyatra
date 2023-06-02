@@ -9,7 +9,7 @@ import finalmyyatra.base.BaseClass;
 import finalmyyatra.pages.YatraIndex;
 
 public class YatraIndexTest extends BaseClass {
-	YatraIndex yatraindex;
+	private YatraIndex yatraindex;
 	@BeforeMethod
 	public void setUp() {
 		launchBrowser();
@@ -29,7 +29,7 @@ public class YatraIndexTest extends BaseClass {
 	public void searchFlight() throws InterruptedException {
 		yatraindex = new YatraIndex();
 		yatraindex.searchCity();
-		System.out.println("search flight is ok ");
+	
 	}
 
 }

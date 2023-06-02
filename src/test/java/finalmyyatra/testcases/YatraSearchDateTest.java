@@ -8,10 +8,10 @@ import finalmyyatra.base.BaseClass;
 import finalmyyatra.pages.YatraIndex;
 import finalmyyatra.pages.YatraSearchDate;
 
-public class YatraSeachDateTest extends BaseClass{
-	YatraIndex yatraindex;
-	 YatraSearchDate yatrasearchdate;
-	 @BeforeMethod
+public class YatraSearchDateTest extends BaseClass{
+	private YatraIndex yatraindex;
+	private YatraSearchDate ysd;
+	@BeforeMethod
 	public void setUp() {
 		launchBrowser();
 	}

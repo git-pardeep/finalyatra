@@ -8,6 +8,7 @@
           <include name="titleConfirm"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="searchFlight"/>
           <include name="closeBrowser"/>
           <include name="loadConfig"/>
         </methods>
