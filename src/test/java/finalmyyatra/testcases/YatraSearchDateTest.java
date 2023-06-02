@@ -10,7 +10,7 @@ import finalmyyatra.pages.YatraSearchDate;
 
 public class YatraSearchDateTest extends BaseClass{
 	private YatraIndex yatraindex;
-	private YatraSearchDate ysd;
+	private YatraSearchDate yatrasearchdate;
 	@BeforeMethod
 	public void setUp() {
 		launchBrowser();
@@ -22,9 +22,9 @@ public class YatraSearchDateTest extends BaseClass{
 	@Test
 	public void dateCheck() throws InterruptedException {
 		yatraindex=new YatraIndex();
-		yatraindex.searchCity();
-//		yatrasearchdate= yatraindex.searchCity();
-//		yatrasearchdate.searchdate();
+//		yatraindex.searchCity();
+		yatrasearchdate= yatraindex.searchCity();
+		yatrasearchdate.searchDate();
 	}
 
 }
