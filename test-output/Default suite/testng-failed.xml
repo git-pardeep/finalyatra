@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="finalmyyatra.testcases.YatraIndexTest">
+      <class name="finalmyyatra.testcases.YatraSearchDateTest">
         <methods>
-          <include name="titleConfirm"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="searchFlight"/>
+          <include name="setUp"/>
           <include name="closeBrowser"/>
+          <include name="dateCheck"/>
           <include name="loadConfig"/>
         </methods>
-      </class> <!-- finalmyyatra.testcases.YatraIndexTest -->
+      </class> <!-- finalmyyatra.testcases.YatraSearchDateTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

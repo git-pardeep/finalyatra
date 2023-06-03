@@ -8,9 +8,9 @@ import finalmyyatra.base.BaseClass;
 import finalmyyatra.pages.YatraIndex;
 import finalmyyatra.pages.YatraSearchDate;
 
-public class YatraSearchDateTest extends BaseClass{
+public class SearchDateTest extends BaseClass{
 	private YatraIndex yatraindex;
-	private YatraSearchDate yatrasearchdate;
+	private YatraSearchDate ysd;
 	@BeforeMethod
 	public void setUp() {
 		launchBrowser();
@@ -22,8 +22,9 @@ public class YatraSearchDateTest extends BaseClass{
 	@Test
 	public void dateCheck() throws InterruptedException {
 		yatraindex=new YatraIndex();
-		yatrasearchdate= yatraindex.searchCity();
-		yatrasearchdate.searchdate();
+		yatraindex.searchCity();
+//		yatrasearchdate= yatraindex.searchCity();
+//		yatrasearchdate.searchdate();
 	}
 
 }

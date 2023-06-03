@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-02T14:08:18 IST" name="Default suite" finished-at="2023-06-02T14:08:50 IST" duration-ms="31101">
+  <suite started-at="2023-06-03T14:06:42 IST" name="Suite" finished-at="2023-06-03T14:07:20 IST" duration-ms="37470">
     <groups>
     </groups>
-    <test started-at="2023-06-02T14:08:18 IST" name="Default test" finished-at="2023-06-02T14:08:50 IST" duration-ms="31101">
+    <test started-at="2023-06-03T14:06:42 IST" name="Test" finished-at="2023-06-03T14:07:20 IST" duration-ms="37470">
       <class name="finalmyyatra.testcases.YatraIndexTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@1d2adfbe]" started-at="2023-06-02T14:08:18 IST" name="loadConfig" finished-at="2023-06-02T14:08:18 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@223d2c72]" started-at="2023-06-03T14:06:42 IST" name="loadConfig" finished-at="2023-06-03T14:06:42 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@1d2adfbe]" started-at="2023-06-02T14:08:18 IST" name="setUp" finished-at="2023-06-02T14:08:29 IST" duration-ms="11008" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@223d2c72]" started-at="2023-06-03T14:06:42 IST" name="setUp" finished-at="2023-06-03T14:06:49 IST" duration-ms="6865" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchFlight()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@1d2adfbe]" started-at="2023-06-02T14:08:29 IST" name="searchFlight" finished-at="2023-06-02T14:08:39 IST" duration-ms="9929" status="PASS">
+        <test-method signature="searchFlight()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@223d2c72]" started-at="2023-06-03T14:06:49 IST" name="searchFlight" finished-at="2023-06-03T14:06:56 IST" duration-ms="6676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchFlight -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@1d2adfbe]" started-at="2023-06-02T14:08:39 IST" name="tearDown" finished-at="2023-06-02T14:08:40 IST" duration-ms="414" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@223d2c72]" started-at="2023-06-03T14:06:56 IST" name="tearDown" finished-at="2023-06-03T14:06:56 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@1d2adfbe]" started-at="2023-06-02T14:08:40 IST" name="setUp" finished-at="2023-06-02T14:08:49 IST" duration-ms="9521" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@223d2c72]" started-at="2023-06-03T14:06:56 IST" name="setUp" finished-at="2023-06-03T14:07:02 IST" duration-ms="5746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="titleConfirm()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@1d2adfbe]" started-at="2023-06-02T14:08:49 IST" name="titleConfirm" finished-at="2023-06-02T14:08:49 IST" duration-ms="15" status="PASS">
+        <test-method signature="titleConfirm()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@223d2c72]" started-at="2023-06-03T14:07:02 IST" name="titleConfirm" finished-at="2023-06-03T14:07:02 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleConfirm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@1d2adfbe]" started-at="2023-06-02T14:08:49 IST" name="tearDown" finished-at="2023-06-02T14:08:50 IST" duration-ms="183" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@223d2c72]" started-at="2023-06-03T14:07:02 IST" name="tearDown" finished-at="2023-06-03T14:07:02 IST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@1d2adfbe]" started-at="2023-06-02T14:08:50 IST" name="closeBrowser" finished-at="2023-06-02T14:08:50 IST" duration-ms="23" status="FAIL">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:finalmyyatra.testcases.YatraIndexTest@223d2c72]" started-at="2023-06-03T14:07:20 IST" name="closeBrowser" finished-at="2023-06-03T14:07:20 IST" duration-ms="29" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '4.9.1', revision: 'eb2032df7f'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5f20306418a25e27a05d415d0fb300d5, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:61173}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61173/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5f20306418a25e27a05d415d0fb300d5]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76fe575ceffb29b5d00a8593dbd9a82d, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55638/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76fe575ceffb29b5d00a8593dbd9a82d]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.9.1', revision: 'eb2032df7f'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5f20306418a25e27a05d415d0fb300d5, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:61173}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61173/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5f20306418a25e27a05d415d0fb300d5
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76fe575ceffb29b5d00a8593dbd9a82d, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55638/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76fe575ceffb29b5d00a8593dbd9a82d
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -96,6 +96,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- finalmyyatra.testcases.YatraIndexTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="finalmyyatra.testcases.YatraSearchDateTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:finalmyyatra.testcases.YatraSearchDateTest@7f3b84b8]" started-at="2023-06-03T14:07:02 IST" name="setUp" finished-at="2023-06-03T14:07:07 IST" duration-ms="4904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dateCheck()[pri:0, instance:finalmyyatra.testcases.YatraSearchDateTest@7f3b84b8]" started-at="2023-06-03T14:07:07 IST" name="dateCheck" finished-at="2023-06-03T14:07:20 IST" duration-ms="12735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dateCheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:finalmyyatra.testcases.YatraSearchDateTest@7f3b84b8]" started-at="2023-06-03T14:07:20 IST" name="tearDown" finished-at="2023-06-03T14:07:20 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- finalmyyatra.testcases.YatraSearchDateTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
