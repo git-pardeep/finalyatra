@@ -22,10 +22,7 @@ public class YatraSearchDateTest extends BaseClass{
 	@Test
 	public void dateCheck() throws InterruptedException {
 		yatraindex=new YatraIndex();
-
 		yatrasearchdate= yatraindex.searchCity();
 		yatrasearchdate.searchdate();
-
 	}
-
 }
