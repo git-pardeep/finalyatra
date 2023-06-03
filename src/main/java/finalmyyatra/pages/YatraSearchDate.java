@@ -53,37 +53,6 @@ public class YatraSearchDate extends BaseClass {
 			}
 //			searchbtn.click();
 
-=======
-	private Actions act = new Actions(getDriver());;
-	@FindBy(xpath="//div[@class='ripple-parent search-height demo-icon icon-go']//input[@id='BE_flight_flsearch_btn']")
-	private WebElement searchbtn;
-	@FindBy(xpath="//input[@id='BE_flight_origin_date']") private WebElement date;
-	@FindBy(xpath="//div[@id='monthWrapper']//tbody//td[@class!='inActiveTD']") 
-	private List<WebElement> srcdate;
-	public YatraSearchDate() {
-		PageFactory.initElements(getDriver(), this);
-	}
-	public void searchDate() throws InterruptedException {
-		JavascriptExecutor js = (JavascriptExecutor)getDriver();
-		
-		System.out.println("search date");
-		date.click();
-		Thread.sleep(1000);
-		int lsitsize =srcdate.size();
-		System.out.println(lsitsize);
-		for (WebElement dt:srcdate) {
-			if(dt.getAttribute("data-date").equalsIgnoreCase("09/07/2023")) {
-				System.out.println("eneter date select");
-				js.executeScript("arguments[0].scrollIntoView();",dt);
-				
-				Thread.sleep(1000);
-				act.moveToElement(dt).click();
-				Thread.sleep(1000);
-				System.out.println("date click succedully : "+dt.getAttribute("data-date"));
-				Thread.sleep(1000);
-			}
-				
->>>>>>> f2dbed53d92dde5647a28ad6a8cb8d849af03425
 		}
 	}
 }
