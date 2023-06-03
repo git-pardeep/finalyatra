@@ -1,10 +1,6 @@
 package finalmyyatra.pages;
 
 import java.util.List;
-<<<<<<< HEAD
-
-=======
->>>>>>> f2dbed53d92dde5647a28ad6a8cb8d849af03425
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -15,7 +11,6 @@ import org.openqa.selenium.support.PageFactory;
 import finalmyyatra.base.BaseClass;
 
 public class YatraSearchDate extends BaseClass {
-<<<<<<< HEAD
 	Actions act = new Actions(getDriver());
 	@FindBy(xpath = "//input[@value='Search Flights']")
 	private WebElement searchbtn;
