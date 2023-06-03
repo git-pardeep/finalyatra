@@ -28,22 +28,22 @@ public class BaseClass {
 		return driver.get();
 	}
 	public void launchBrowser() {
-//		if (prop.getProperty("browser").equalsIgnoreCase("chrome"))
-			if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
+		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
+//			if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver.set(new ChromeDriver());
 		}
-		else if (System.getProperty("browser").equalsIgnoreCase("edge")) {
+		else if (prop.getProperty("browser").equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver.set(new EdgeDriver());
-		}else if (System.getProperty("browser").equalsIgnoreCase("firefox")) {
+		}else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver.set(new FirefoxDriver());
 		}else {
 			System.out.println("enter valid browser : ");
 		}
 		getDriver().manage().deleteAllCookies();
-		getDriver().get(System.getProperty("url"));
+		getDriver().get(prop.getProperty("url"));
 		getDriver().manage().window().maximize();
 		
 	}
