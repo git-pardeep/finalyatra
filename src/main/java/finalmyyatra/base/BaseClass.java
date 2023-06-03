@@ -43,7 +43,7 @@ public class BaseClass {
 			System.out.println("enter valid browser : ");
 		}
 		getDriver().manage().deleteAllCookies();
-		getDriver().get(prop.getProperty("url"));
+		getDriver().get(System.getProperty("url"));
 		getDriver().manage().window().maximize();
 		
 	}
