@@ -28,14 +28,15 @@ public class BaseClass {
 		return driver.get();
 	}
 	public void launchBrowser() {
-		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
+//		if (prop.getProperty("browser").equalsIgnoreCase("chrome"))
+			if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver.set(new ChromeDriver());
 		}
-		else if (prop.getProperty("browser").equalsIgnoreCase("edge")) {
+		else if (System.getProperty("browser").equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver.set(new EdgeDriver());
-		}else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
+		}else if (System.getProperty("browser").equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver.set(new FirefoxDriver());
 		}else {
