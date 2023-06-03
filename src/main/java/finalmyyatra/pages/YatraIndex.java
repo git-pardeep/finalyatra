@@ -25,15 +25,13 @@ public class YatraIndex extends BaseClass{
 		depart.click();
 		Thread.sleep(1000);
 		depart.sendKeys("Mumbai");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		depart.sendKeys(Keys.ENTER);
-		Thread.sleep(1000);
 		going.click();
 		Thread.sleep(1000);
 		going.sendKeys("kolkata");
 		Thread.sleep(1000);
 		going.sendKeys(Keys.ENTER);
-		Thread.sleep(1000);
 		return new YatraSearchDate();
 	}
 	
