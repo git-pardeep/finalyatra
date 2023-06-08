@@ -35,6 +35,7 @@ public class BaseClass {
 	public void launchBrowser() {
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 //			if (System.getProperty("browser").equalsIgnoreCase("chrome")) 
+//			if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver.set(new ChromeDriver());
 		}
@@ -48,7 +49,7 @@ public class BaseClass {
 			System.out.println("enter valid browser : ");
 		}
 		getDriver().manage().deleteAllCookies();
-		getDriver().get(System.getProperty("url"));
+		getDriver().get(prop.getProperty("url"));
 		getDriver().manage().window().maximize();
 		
 	}

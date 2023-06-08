@@ -504,3 +504,9 @@
 2023-06-07 11:22:25 INFO  Log:10 - ======================Test Start searchflight  Start Test ======================
 2023-06-07 11:22:34 INFO  Log:13 - =====================end Test searchflight  End Test =======================
 2023-06-07 11:22:42 INFO  Log:16 - end program
+2023-06-08 13:57:06 INFO  Log:16 - total Row : 1
+2023-06-08 13:57:06 INFO  Log:16 - total colum : 2
+2023-06-08 13:57:06 INFO  Log:16 - excel data :[[Ljava.lang.String;@3bffddff
+2023-06-08 13:57:40 INFO  Log:10 - ======================Test Start searchflight  Start Test ======================
+2023-06-08 13:57:44 INFO  Log:13 - =====================end Test searchflight  End Test =======================
+2023-06-08 13:57:47 INFO  Log:16 - end program
