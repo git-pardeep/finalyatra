@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 
 import finalmyyatra.base.BaseClass;
 import finalmyyatra.pages.YatraIndex;
+import finalmyyatra.utilities.Log;
+import finalmyyatra.utilities.ReadExcelFile;
 
 public class YatraIndexTest extends BaseClass {
 	private YatraIndex yatraindex;
@@ -16,19 +18,20 @@ public class YatraIndexTest extends BaseClass {
 	}
 	@AfterMethod
 	public void tearDown() {
-		closeBrowser();
+		getDriver().close();
 	}
 	@Test
 	public void titleConfirm() {
 		String actualtitle= "Flight, Cheap Air Tickets , Hotels, Holiday, Trains Package Booking - Yatra.com";
-		
 		String expectedtitle= yatraindex.title();
 		Assert.assertEquals(actualtitle, expectedtitle,"not matched");
 	}
-	@Test
-	public void searchFlight() throws InterruptedException {
+	@Test(dataProvider="test",dataProviderClass=ReadExcelFile.class)
+	public void searchFlight(String org,String dpr) throws InterruptedException {
 		yatraindex = new YatraIndex();
-		yatraindex.searchCity();
+		Log.startTest("Test Start searchflight");
+		yatraindex.searchCity(org,dpr);
+		Log.endTest("end Test searchflight");
 	
 	}
 

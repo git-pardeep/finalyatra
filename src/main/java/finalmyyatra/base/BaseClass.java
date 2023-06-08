@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -12,6 +13,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import finalmyyatra.utilities.ExtentManager;
+import finalmyyatra.utilities.Log;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
@@ -20,6 +23,8 @@ public class BaseClass {
 	public static FileInputStream fis;
 	@BeforeSuite
 	public void loadConfig() throws IOException {
+		ExtentManager.setExtent();
+		DOMConfigurator.configure("log4j.xml");
 		 prop = new Properties ();
 		 fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
 		 prop.load(fis);
@@ -48,7 +53,9 @@ public class BaseClass {
 		
 	}
 	@AfterSuite
-	public void closeBrowser() {
-		getDriver().close();
+	public void endExtent() {
+		Log.info("end program");
+		ExtentManager.endExtent();
+		
 	}
 }

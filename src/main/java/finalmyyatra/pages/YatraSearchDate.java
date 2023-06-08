@@ -22,7 +22,7 @@ public class YatraSearchDate extends BaseClass {
 		PageFactory.initElements(getDriver(), this);
 	}
 
-	public void searchdate() throws InterruptedException {
+	public void searchdate(String dt1) throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) getDriver();
 
 		System.out.println("search date");
@@ -34,7 +34,8 @@ public class YatraSearchDate extends BaseClass {
 		for (WebElement dt : srcdate) {
 			String text =dt.getAttribute("data-date");
 			System.out.println(text);
-			if (dt.getAttribute("data-date").equalsIgnoreCase("09/07/2023")) {
+//			if (dt.getAttribute("data-date").equalsIgnoreCase("09/07/2023"))
+				if (dt.getAttribute("data-date").equalsIgnoreCase(dt1)){
 				System.out.println("eneter date select");
 				js.executeScript("arguments[0].scrollIntoView();", dt);
 

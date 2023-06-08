@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import finalmyyatra.base.BaseClass;
 import finalmyyatra.pages.YatraIndex;
 import finalmyyatra.pages.YatraSearchDate;
+import finalmyyatra.utilities.Log;
+import finalmyyatra.utilities.ReadExcelFile;
 
 public class YatraSearchDateTest extends BaseClass{
 	private YatraIndex yatraindex;
@@ -17,12 +19,14 @@ public class YatraSearchDateTest extends BaseClass{
 	}
 	@AfterMethod
 	public void tearDown() {
-		closeBrowser();
+		getDriver().close();
 	}
-	@Test
-	public void dateCheck() throws InterruptedException {
+	@Test(dataProvider="test",dataProviderClass=ReadExcelFile.class)
+	public void dateCheck(String org , String dpr, String dt) throws InterruptedException {
 		yatraindex=new YatraIndex();
-		yatrasearchdate= yatraindex.searchCity();
-		yatrasearchdate.searchdate();
+		Log.startTest("Test Start date check");
+		yatrasearchdate= yatraindex.searchCity(org, dpr);
+		yatrasearchdate.searchdate(dt);
+		Log.startTest("Test end datecheck ");
 	}
 }
